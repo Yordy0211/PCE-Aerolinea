@@ -135,6 +135,21 @@
 
             <form class="busquedaVuelos">
 
+                <fieldset>
+
+                    <legend>Tipo de vuelo:</legend>
+                    <label for="tipoVuelo">Tipo de vuelo</label>
+
+                    <select name="tipoVuelo" id="tipoVuelo">
+                        <option value="ida">Ida</option>
+                        <option value="idaYvuelta">Ida y Vuelta</option>
+                    </select>
+
+                </fieldset>
+
+                <fieldset>
+
+                    <legend>Desde a:</legend>
                 <label for="partida">Partida</label>
                 <select name="Salida" id="partida">
 
@@ -146,11 +161,23 @@
                     <option value="Destino">Ciudad de destino</option>
                 </select>
 
+                </fieldset>
+
+                <fieldset>
+
+                    <legend>Cuando:</legend>
+
                 <label for="salida">Salida</label>
                 <input type="date" name="salida" id="salida">
 
                 <label for="llegada">Llegada</label>
                 <input type="date" name="llegada" id="llegada">
+
+                </fieldset>
+
+                <fieldset>
+
+                    <legend>Pasajero y cantidad de voletos:</legend>
 
                 <label for="pasajeros">Pasajeros</label>
                 <select name="pasajeros" id="pasajeros">
@@ -168,15 +195,25 @@
                     <option value="4">4</option>
                 </select>
 
+                </fieldset>
+
+                <fieldset>
+
+                    <legend>Clase:</legend>
+
                 <label for="clase">Clase</label>
                 <select name="clase" id="clase">
                     <option value="turista">Turista</option>
-                    <option value="turista-superios">Turista superior</option>
+                    <option value="turista-superior">Turista superior</option>
                     <option value="negocios">Negocios</option>
                     <option value="primera">Primera</option>
                 </select>
 
-                <button type="submit">Buscar vuelos</button>
+                </fieldset>
+
+                <div>
+                    <button type="submit">Buscar vuelos</button>
+                </div>
 
 
             </form>
