@@ -26,6 +26,139 @@
 
 
     </header>
+
+    <hr>
+
+
+    <section id="vuelos" class="vuelos">
+
+            <h2>Buscar vuelos disponibles</h2>
+
+            <form class="busquedaVuelos">
+
+                <fieldset>
+
+                    <legend>Tipo de vuelo:</legend>
+                    <label for="tipoVuelo">Tipo de vuelo</label>
+
+                    <select name="tipoVuelo" id="tipoVuelo">
+                        <option value="ida">Ida</option>
+                        <option value="idaYvuelta">Ida y Vuelta</option>
+                    </select>
+
+                </fieldset>
+
+                <fieldset>
+
+                    <legend>Desde a:</legend>
+                <label for="partida">Partida</label>
+                <select name="Salida" id="partida">
+
+                    <option value="ciudad">Ciudad actual</option>
+                </select>
+
+                <label for="destino">Destino</label>
+                <select name="destino" id="destino">
+                    <option value="Destino">Ciudad de destino</option>
+                </select>
+
+                </fieldset>
+
+                <fieldset>
+
+                    <legend>Cuando:</legend>
+
+                <label for="salida">Salida</label>
+                <input type="date" name="salida" id="salida">
+
+                <label for="llegada">Llegada</label>
+                <input type="date" name="llegada" id="llegada">
+
+                </fieldset>
+
+                <fieldset>
+
+                    <legend>Pasajero y cantidad de voletos:</legend>
+
+                <label for="pasajeros">Pasajeros</label>
+                <select name="pasajeros" id="pasajeros">
+
+                    <option value="adulto">Adulto</option>
+                    <option value="niños">niños</option>
+                    <option value="bebés">Bebés</option>
+                </select>
+
+                <label for="cantidad">Cantidad</label>
+                <select name="cantidad" id="cantidad">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+
+                </fieldset>
+
+                <fieldset>
+
+                    <legend>Clase:</legend>
+
+                <label for="clase">Clase</label>
+                <select name="clase" id="clase">
+                    <option value="turista">Turista</option>
+                    <option value="turista-superior">Turista superior</option>
+                    <option value="negocios">Negocios</option>
+                    <option value="primera">Primera</option>
+                </select>
+
+                </fieldset>
+
+                <div>
+                    <button type="submit">Buscar vuelos</button>
+                </div>
+
+
+            </form>
+
+
+
+        </section>
+
+        <hr>
+
+
+
+
+
+
+    <footer>
+
+        <p>©2025 Todos los derechos reservados</p>
+
+        <div>
+        <nav>
+        <a href="">Terminos y condiciones</a>
+        <a href="tel:+18094892442">+1 809-489-2442</a>
+        <a href="mailto:AeroDomingo@gmail.com">AeroDomingo@gmail.com</a>
+        <a href="">Instalaciones</a>
+        </nav>
+
+        </div>
+
+        <div>
+        <h3>Redes</h3>
+
+        <p>Siguenos en:</p>
+        <nav>
+        <a href="">Instagram</a>
+        <a href="">Facebook</a>
+        <a href="">X</a>
+        <a href="">Youtube</a>
+
+        </nav>
+
+        </div>
+
+    </footer>
     
 </body>
 </html>
