@@ -53,5 +53,77 @@ header {
 
     }
 
+    .login {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        width: 90%;
+        max-width: 900px;
+        margin: 20px auto;
+        border-radius: 20px;
+        background: #fdfdfd;
+        box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        padding: 10px;
 
+        h2 {
+            font-family: "Oswald", sans-serif;
+            font-size: 40px;
+            letter-spacing: 5px;
+            text-decoration: underline;
+            color: #007bff;
+        }
+
+        form {
+            width: 300px;
+            margin: auto;
+            align-items: center;
+
+            label {
+                display: block;
+                font-size: 22px;
+                font-family: "Poppins", sans-serif;
+                margin: 10px;
+                text-decoration: underline;
+            }
+
+            input {
+
+                display: block;
+                text-align: center;
+                margin: 10px auto;
+                padding: 15px;
+                background: rgba(0,0,0,0.1);
+                border: none;
+                border-radius: 10px;
+                transition: transform 0.4s ease;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+
+            }
+            button {
+
+                border: none;
+                padding: 20px;
+                border-radius: 10px;
+                font-size: 15px;
+                background-color: #007bff;
+                cursor: pointer;
+                transition: transform 0.5s ease;
+                color: white;
+                margin: 5px;
+
+
+                &:hover {
+                    background: #0056b3;
+                    transform: scale(1.1);
+                }
+
+            }
+
+
+        }
+
+        }
 
