@@ -249,6 +249,8 @@ header .link a:hover {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   text-align: center;
   transition: transform 0.5s ease;
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 .sobre .container article:hover {
   transform: scale(1.05);
@@ -261,6 +263,59 @@ header .link a:hover {
 }
 .sobre .container article p, .sobre .container article ul {
   text-shadow: 1px 1px white;
+  font-size: 18px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.servicios {
+  background-image: url(img/service.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px;
+  border-radius: 20px;
+}
+.servicios h2 {
+  text-align: center;
+  background: linear-gradient(90deg, #007bff, #00b4d8);
+  padding: 20px;
+  max-width: 700px;
+  margin: 20px auto;
+  border-radius: 20px;
+  color: white;
+  text-shadow: 1px 1px 4px black;
+  font-family: "Oswald", sans-serif;
+  text-decoration: underline;
+  letter-spacing: 3px;
+}
+.servicios .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2em;
+  margin: auto;
+}
+.servicios .container article {
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  transition: transform 0.5s ease;
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.servicios .container article:hover {
+  transform: scale(1.05);
+}
+.servicios .container article h3 {
+  color: white;
+  font-size: 25px;
+  font-family: "Oswald", sans-serif;
+  text-shadow: 1px 1px 4px rgba(46, 46, 46, 0.2);
+  text-shadow: 2px 2px black;
+}
+.servicios .container article p {
+  color: white;
+  text-shadow: 2px 2px black;
   font-size: 18px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
