@@ -41,7 +41,16 @@ header .link a:hover {
   transform: scale(1.1);
 }
 
-.login {
+.Login {
+  background-image: url(img/login.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 20px;
+}
+.Login .login, .Login .usuario {
   display: flex;
   text-align: center;
   flex-direction: column;
@@ -49,30 +58,45 @@ header .link a:hover {
   max-width: 900px;
   margin: 20px auto;
   border-radius: 20px;
-  background: #fdfdfd;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   padding: 10px;
 }
-.login h2 {
-  font-family: "Oswald", sans-serif;
-  font-size: 40px;
-  letter-spacing: 5px;
-  text-decoration: underline;
-  color: #007bff;
+.Login .login form, .Login .usuario form {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
-.login form {
+.Login .login h2, .Login .usuario h2 {
+  text-align: center;
+  background: linear-gradient(90deg, #007bff, #00b4d8);
+  padding: 20px;
+  max-width: 700px;
+  margin: 20px auto;
+  border-radius: 20px;
+  color: white;
+  text-shadow: 1px 1px 4px black;
+  font-family: "Oswald", sans-serif;
+  text-decoration: underline;
+  letter-spacing: 3px;
+}
+.Login .login form, .Login .usuario form {
   width: 300px;
   margin: auto;
   align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
-.login form label {
+.Login .login form label, .Login .usuario form label {
   display: block;
   font-size: 22px;
   font-family: "Poppins", sans-serif;
   margin: 10px;
   text-decoration: underline;
+  text-shadow: 1px 1px white;
 }
-.login form input {
+.Login .login form input, .Login .usuario form input {
   display: block;
   text-align: center;
   margin: 10px auto;
@@ -82,22 +106,22 @@ header .link a:hover {
   border-radius: 10px;
   transition: transform 0.4s ease;
 }
-.login form input:hover {
+.Login .login form input:hover, .Login .usuario form input:hover {
   transform: scale(1.1);
 }
-.login form button {
+.Login .login form button, .Login .usuario form button {
   border: none;
   padding: 20px;
   border-radius: 10px;
   font-size: 15px;
-  background-color: #007bff;
+  background-color: rgba(0, 123, 255, 0.4862745098);
   cursor: pointer;
   transition: transform 0.5s ease;
   color: white;
   margin: 5px;
 }
-.login form button:hover {
-  background: #0056b3;
+.Login .login form button:hover, .Login .usuario form button:hover {
+  background: rgba(0, 86, 179, 0.4862745098);
   transform: scale(1.1);
 }
 
