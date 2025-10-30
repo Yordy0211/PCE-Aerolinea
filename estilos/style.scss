@@ -156,6 +156,110 @@ header {
 
 }
 
+.vuelos {
+    background-image: url(img/checkin.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    border-radius: 20px;
+
+
+    h2 {
+        text-align: center;
+        background: linear-gradient(90deg, #007bff, #00b4d8);
+        padding: 20px;
+        max-width: 700px;
+        margin: 20px auto;
+        border-radius: 20px;
+        color: white;
+        text-shadow: 1px 1px 4px black;
+        font-family: "Oswald", sans-serif;
+        text-decoration: underline;
+        letter-spacing: 3px;
+    }
+
+.busquedaVuelos {
+    max-width: 900px;
+    margin: 20px auto;
+    text-align: center;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+    border-radius: 20px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+    fieldset {
+
+        border-radius: 40px;
+        margin: 15px;
+        box-shadow: 0 0 20px rgba(0,0,0,0.3);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+
+        legend{
+            font-size: 25px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-shadow: 1px 1px white;
+
+        }
+
+        label {
+            font-size: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        select, input {
+
+            padding: 10px;
+            border-radius: 15px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 18px;
+            margin-left: 5px;
+            margin-right: 5px;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            transition: transform 0.5s ease;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+
+    }
+
+    div {
+        button {
+
+                border: 1px solid rgba(255, 255, 255, 0.3);
+                padding: 20px;
+                border-radius: 10px;
+                font-size: 15px;
+                background-color: #007bff7c;
+                cursor: pointer;
+                transition: transform 0.5s ease;
+                color: white;
+                margin: 5px;
+
+
+
+                &:hover {
+                    background: #0056b37c;
+                    transform: scale(1.1);
+                }
+
+            }
+    }
+
+}
+
+
+
+
+
+}
+
 
 
 
