@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +13,7 @@
 
         <h1>Aero Domingo</h1>
 
-        <nav>
+        <nav class="link">
             <a href="">Inicio</a>
             <a href="">Vuelos Disponibles</a>
             <a href="">Servicios</a>
@@ -28,26 +28,42 @@
 
     <main>
 
-<section>
+<section class="bienvenida">
+
+
+    <h2>Aero Domingo</h2>
+
 
     <div class="descripcion">
 
-        <h2>Aero Domingo</h2>
-        <p>ElecticTrans Airlines es una aerolínea moderna enfocada en 
+        
+        <p>Aero Domingo Airlines es una aerolínea moderna enfocada en 
             ofrecer viajes seguros, accesibles y eficientes. Nuestro 
             compromiso es conectar ciudades y personas a través de un 
             servicio confiable, cómodo y pensado para el pasajero.</p>
+
+        <p>Nos destacamos por el uso de tecnología para optimizar la 
+            experiencia de vuelo, desde la búsqueda y reserva de boletos 
+            hasta la gestión de horarios y atención al cliente. En 
+            ElecticTrans Airlines, cada viaje es una oportunidad para 
+            brindar calidad, puntualidad y confianza.</p>
     </div>
 
-    <div class="imagen-Inicial">
-        <img src="" alt="Imagen de un avion">
-    </div>
+
+
 
 </section>
 
-<section class="moduloVuelo">
 
-    <div class="modulo">
+
+<section class="moduloVuelo">
+    
+        <h2>Buscar vuelos</h2>
+
+    <div>
+
+
+        <form id="modulo">
 
         <input type="text" name="salida" id="salida" placeholder="Ciudad de salida">
         <input type="text" name="destino" id="destino" placeholder="Ciudad de destino">
@@ -58,6 +74,8 @@
         <input type="number" name="pasajeros" id="pasajeros" placeholder="Numero de pasajeros">
 
         <input type="button" name="buscar" id="buscar" value="Buscar Vuelos">
+
+        </form>
 
     </div>
 
