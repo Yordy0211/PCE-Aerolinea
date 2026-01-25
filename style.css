@@ -18,16 +18,60 @@ body h2, body h3 {
   font-family: var(--text-font);
 }
 
+main {
+  padding-top: 100px;
+}
+
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 20px;
+  background: var(--secundary-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
 header .link a {
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
-  margin: 10px;
+  font-size: 18px;
+  font-family: var(--text-font);
+  font-weight: bold;
+  margin: 20px;
+  color: white;
+  text-shadow: 1px 1px black;
+  transition: transform 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+header .link a:hover {
+  transform: translateY(-3px);
+  text-decoration: underline;
+  color: var(--primary-color);
+  text-shadow: 0 2px 8px rgba(112, 195, 255, 0.6);
+}
+header h1 {
+  letter-spacing: 2px;
+  color: white;
+  text-shadow: 1px 1px black;
+}
+header #login {
+  padding: 15px;
+  border-radius: 10px;
+  font-family: var(--text-font);
+  font-weight: bold;
+  color: white;
+  text-shadow: 1px 1px black;
+  background: var(--primary-color);
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+header #login:hover {
+  transform: scale(1.05);
+  background: #5A67E6;
 }
 
 .bienvenida .hero {
@@ -103,7 +147,6 @@ header .link a {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
   margin: 0;
   font-size: 0.95rem;
-  cursor: pointer;
 }
 .moduloVuelo form #buscar {
   grid-column: span 2;
