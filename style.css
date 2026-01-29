@@ -164,4 +164,88 @@ header #login:hover {
   box-shadow: 0 8px 20px rgba(112, 124, 255, 0.4);
 }
 
+.servicios {
+  text-align: center;
+  background: #F4F7FF;
+  padding: 80px 20px;
+}
+.servicios h2 {
+  margin: 30px;
+  font-size: 30px;
+  font-family: var(--text-font);
+  color: var(--secundary-color);
+}
+.servicios .servicios-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin: auto;
+}
+.servicios .servicios-container div {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 10px;
+}
+.servicios .servicios-container div h3 {
+  font-size: 25px;
+  margin: 10px;
+  color: var(--primary-color);
+}
+.servicios .servicios-container div ul, .servicios .servicios-container div li {
+  margin: 10px;
+  font-family: var(--text-font);
+  list-style: none;
+}
+
+.contacto {
+  text-align: center;
+  margin: 20px;
+}
+.contacto h2 {
+  font-family: var(--text-font);
+  color: var(--primary-color);
+  font-size: 30px;
+  text-decoration: underline;
+  letter-spacing: 5px;
+}
+.contacto form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #F4F7FF;
+  width: 500px;
+  margin: 20px auto;
+  padding: 10px;
+  border-radius: 10px;
+}
+.contacto form label {
+  font-size: 20px;
+  font-family: var(--text-font);
+}
+.contacto form input {
+  border: none;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+.contacto form input:hover {
+  transform: scale(1.05);
+}
+.contacto form button {
+  padding: 10px;
+  border-radius: 10px;
+  background: var(--primary-color);
+  border: none;
+  cursor: pointer;
+  color: white;
+  margin: 10px;
+  transition: transform 0.3s ease;
+}
+.contacto form button:hover {
+  transform: scale(1.1);
+}
+
 /*# sourceMappingURL=style.css.map */

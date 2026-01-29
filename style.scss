@@ -209,3 +209,120 @@ header {
         }
     }
 }
+
+
+.servicios {
+
+    text-align: center;
+    background: #F4F7FF;
+    padding: 80px 20px;
+
+    h2{
+        margin: 30px;
+        font-size: 30px;
+        font-family: var(--text-font);
+        color: var(--secundary-color);
+    }
+
+
+    .servicios-container {
+
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        margin: auto;
+
+
+        div {
+
+            background: rgba($color: #000000, $alpha: 0.1);
+            border-radius: 10px;
+            padding: 10px;
+
+            h3 {
+                font-size: 25px;
+                margin: 10px;
+                color: var(--primary-color);
+            }
+
+            ul, li{
+            margin: 10px;
+            font-family: var(--text-font);
+            list-style: none;
+        }
+        }
+
+
+
+    }
+
+
+}
+
+
+
+
+.contacto {
+
+    text-align: center;
+    margin: 20px;
+
+    h2 {
+        font-family: var(--text-font);
+        color: var(--primary-color);
+        font-size: 30px;
+        text-decoration: underline;
+        letter-spacing: 5px;
+        }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #F4F7FF;
+        width: 500px;
+        margin: 20px auto;
+        padding: 10px;
+        border-radius: 10px;
+
+        label{
+
+            font-size: 20px;
+            font-family: var(--text-font);
+
+        }
+
+
+        input {
+            border: none;
+            background: rgba($color: #000000, $alpha: 0.1);
+            border-radius: 10px;
+            padding: 10px;
+            text-align: center;
+            transition: transform 0.3s ease;
+
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+
+        button {
+            padding: 10px;
+            border-radius: 10px;
+            background: var(--primary-color);
+            border: none;
+            cursor: pointer;
+            color: white;
+            margin: 10px;
+            transition: transform 0.3s ease;
+
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+
+    }
+
+}
