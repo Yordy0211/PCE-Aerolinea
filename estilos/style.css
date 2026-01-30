@@ -76,7 +76,7 @@ header #btn-login:hover {
 
 .bienvenida .hero {
   height: 60vh;
-  background-image: url("fondo.png");
+  background-image: url("img/fondo.png");
   background-size: cover;
   background-position: center;
   display: flex;
