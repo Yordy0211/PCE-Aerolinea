@@ -261,6 +261,13 @@ footer .footer-container {
   padding: 80px;
   font-family: var(--text-font);
 }
+footer .footer-container .redes a {
+  text-decoration: none;
+  margin: 5px;
+}
+footer .footer-container .redes a:hover {
+  transform: translateY(-5px);
+}
 footer .footer-container h2 {
   font-family: var(--text-font);
   font-size: 25px;

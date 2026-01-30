@@ -343,6 +343,16 @@ footer {
     padding: 80px;
     font-family: var(--text-font);
 
+    .redes {
+        a {
+            text-decoration: none;
+            margin: 5px;
+
+            &:hover {
+                transform: translateY(-5px);
+            }
+        }
+    }
 
     h2 {
         font-family: var(--text-font);
