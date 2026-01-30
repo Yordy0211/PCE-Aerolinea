@@ -70,7 +70,7 @@ header {
         text-shadow: 1px 1px black;
     }
 
-    #login {
+    #btn-login {
         padding: 15px;
         border-radius: 10px;
         font-family: var(--text-font);
@@ -331,10 +331,10 @@ header {
 footer {
 
     text-align: center;
+    background: #F4F7FF;
 
 
     .footer-container {
-    background: #F4F7FF;
     display: flex;
     flex-direction: row;
     justify-content: center;

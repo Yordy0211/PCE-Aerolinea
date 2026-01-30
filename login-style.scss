@@ -1,0 +1,116 @@
+:root {
+    --primary-color: #707CFF;
+    --secundary-color: #70C3FF;
+    --text-font: "Montserrat", sans-serif;
+    --title-font: "Poppins", sans-serif;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(fondo-login.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+main {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.login {
+
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    width: 550px;
+    height: 600px;
+    background: #F4F7FF;
+    border-radius: 30px;
+    box-shadow: 0 3px 6px rgba($color: #000000, $alpha: 0.3);
+
+    h2 {
+        font-size: 50px;
+        font-family: var(--title-font);
+        color: var(--primary-color);
+        letter-spacing: 5px;
+        text-shadow: 4px 4px rgba($color: #000000, $alpha: 0.1);
+    }
+
+
+    #login-form {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        label {
+            font-size: 25px;
+            font-family: var(--text-font);
+            
+        }
+
+
+        input {
+            text-align: center;
+            font-family: var(--text-font);
+            font-size: large;
+            font-weight: bold;
+            padding: 20px;
+            border-radius: 30px;
+            margin: 10px;
+            width: 300px;
+            border: 1px solid rgba($color: #000000, $alpha: 0.1);
+            box-shadow: 0 6px 5px rgba($color: #000000, $alpha: 0.1);
+            transition: transform 0.3s ease;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+
+        #iniciar-sesion{
+
+            padding: 20px;
+            border: none;
+            border-radius: 15px;
+            background: var(--primary-color);
+            color: white;
+            font-size: 20px;
+            font-family: var(--text-font);
+            font-weight: bold;
+            margin: 10px;
+            cursor: pointer;
+            transition: transform 0.3s ease, background 0.3s ease;
+
+            &:hover {
+                transform: translateY(-5px);
+                background: #5A67E6;
+            }
+
+        }
+
+        a {
+            font-size: 19px;
+            text-decoration: none;
+            font-family: var(--text-font);
+            margin: 2px;
+        }
+
+    }
+
+}

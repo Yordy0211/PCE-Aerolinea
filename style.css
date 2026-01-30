@@ -57,7 +57,7 @@ header h1 {
   color: white;
   text-shadow: 1px 1px black;
 }
-header #login {
+header #btn-login {
   padding: 15px;
   border-radius: 10px;
   font-family: var(--text-font);
@@ -69,7 +69,7 @@ header #login {
   cursor: pointer;
   transition: transform 0.3s ease, background 0.3s ease;
 }
-header #login:hover {
+header #btn-login:hover {
   transform: scale(1.05);
   background: #5A67E6;
 }
@@ -250,9 +250,9 @@ header #login:hover {
 
 footer {
   text-align: center;
+  background: #F4F7FF;
 }
 footer .footer-container {
-  background: #F4F7FF;
   display: flex;
   flex-direction: row;
   justify-content: center;
