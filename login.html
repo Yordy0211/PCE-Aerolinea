@@ -12,6 +12,7 @@
 
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/estilo-login/login-style.css">
+    <link rel="stylesheet" href="estilos/estilo.register/register-style.css">
 </head>
 <body>
 
@@ -37,31 +38,58 @@
 
     <main>
 
-        <div class="login">
+        <div class="login" id="login-box">
 
         <h2>Inicia sesión</h2>
 
-        <form id="login-form" action="">
+        <form id="login-form">
 
             <label for="usuario">Usuario</label>
-            <input type="text" name="usuario" id="usuario" placeholder="Ramón" required>
+            <input type="text" name="usuario" id="usuario-login" placeholder="Ramón" required>
 
             <label for="email">Email</label>
-            <input type="email" name="email" id="email" placeholder="Ramón@gmail.com" required>
+            <input type="email" name="email" id="email-login" placeholder="Ramón@gmail.com" required>
 
             <label for="password">Contraseña</label>
-            <input type="password" name="password" id="password" placeholder="R4m0n20" required>
+            <input type="password" name="password" id="password-login" placeholder="R4m0n20" required>
 
 
             <button type="submit" id="iniciar-sesion">Iniciar sesión</button>
-            <a href="" id="olvidaste-contra">Olvidaste la Contraseña?</a>
-            <a href="" id="registrarse">Registrarse</a>
+            <a href="" class="forgot">Olvidaste la Contraseña?</a>
+            <a href="#" id="go-register">Registrarse</a>
 
-            <p id="mensaje"></p>
+            <p id="mensaje-login"></p>
 
         </form>
 
-    </div>
+        </div>
+
+
+        <div class="register hidden" id="register-box">
+
+        <h2>Registrate</h2>
+
+        <form id="register-form">
+
+            <label for="usuario">Usuario</label>
+            <input type="text" name="usuario" id="usuario-register" placeholder="Ramón" required>
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email-register" placeholder="Ramón@gmail.com" required>
+
+            <label for="password">Contraseña</label>
+            <input type="password" name="password" id="password-register" placeholder="R4m0n20" required>
+
+
+            <button type="submit" id="registrarse">Registrarse</button>
+            <a href="" class="forgot">Olvidaste la Contraseña?</a>
+            <a href="#" id="go-login">iniciar sesion</a>
+
+            <p id="mensaje-register"></p>
+
+        </form>
+
+        </div>
     
     </main>
 
@@ -117,6 +145,6 @@
 
 
 
-    
+    <script src="scripts/login-register.js"></script>
 </body>
 </html>
