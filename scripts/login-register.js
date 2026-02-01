@@ -58,3 +58,47 @@ registerForm.addEventListener("submit", function(e){
 
     alert("Usuario registrado con exito")
 })
+
+
+//inicio de sesion
+
+const loginForm = document.getElementById("login-form")
+
+loginForm.addEventListener("submit", function(e) {
+    e.preventDefault()
+
+    let emailLog = document.getElementById("email-login").value
+    let passwordLog = document.getElementById("password-login").value
+
+    let usuario = localStorage.getItem("usuario")
+
+    if (usuario === null) {
+        alert("No existe este usuario")
+        return
+    }
+
+    usuario = JSON.parse(usuario)
+
+    const buscarUsuario = usuario.find(
+        u => u.email === emailLog
+    )
+
+    if (!buscarUsuario) {
+        alert("El email no existe")
+        return
+    }
+
+    if (buscarUsuario.password !== passwordLog) {
+        alert("Contraseña incorrecta")
+        return
+    }
+
+    localStorage.setItem(
+        "Usuario Activo",
+        JSON.stringify(buscarUsuario)
+    )
+    alert("Inicio de sesion correcto")
+    window.location.href = "index.html"
+
+})
+
