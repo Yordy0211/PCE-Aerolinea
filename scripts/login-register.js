@@ -1,4 +1,4 @@
-//Esto hace que al hacer click en registrarse cambiede de iniciar sesion-
+//Esto hace que al hacer click en registrarse cambie de de iniciar sesion-
 //a registrarse y al revéz
 
 const goRegister = document.getElementById("go-register") //esto toma el link de registrarse y login y lo guarda en esta variable
