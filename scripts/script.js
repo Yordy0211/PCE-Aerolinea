@@ -15,12 +15,11 @@ if (usuarioActivo !== null) {
     let userArea = document.getElementById("user-area")
 
     btnLogin.style.display = "none"
+    userArea.style.display = "flex"
 
     userArea.innerHTML = `
-        <div class="user-profile" id="go-profile">
-        <span class="username">${usuario.usuario}</span>
-        <div class="avatar">${usuario.usuario.charAt(0).toUpperCase()}</div>
-        </div>
+        <img class="img-profile" id="go-profile" src="estilos/img/foto-perfil.jpg" alt="foto-perfil">
+
         <button class="logout" id="logout">Cerrrar sesión</button>
     `
 }

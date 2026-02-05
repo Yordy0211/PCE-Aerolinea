@@ -34,6 +34,20 @@ header {
   width: 100%;
   z-index: 1000;
 }
+header #user-area {
+  display: none;
+}
+header .img-profile {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+header .img-profile:hover {
+  transform: scale(1.1);
+}
 header .link a {
   text-decoration: none;
   display: inline-block;
@@ -70,6 +84,22 @@ header #btn-login {
   transition: transform 0.3s ease, background 0.3s ease;
 }
 header #btn-login:hover {
+  transform: scale(1.05);
+  background: #5A67E6;
+}
+header .logout {
+  padding: 15px;
+  border-radius: 10px;
+  font-family: var(--text-font);
+  font-weight: bold;
+  color: white;
+  text-shadow: 1px 1px black;
+  background: var(--primary-color);
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+header .logout:hover {
   transform: scale(1.05);
   background: #5A67E6;
 }
