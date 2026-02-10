@@ -49,7 +49,8 @@ registerForm.addEventListener("submit", function(e){
     const nuevoUsuario = {
         usuario: usuarioReg,
         email: emailReg,
-        password: passwordReg
+        password: passwordReg,
+        fechaRegistro: new Date().toLocaleDateString()
     }
 
     usuario.push(nuevoUsuario)

@@ -28,7 +28,7 @@ if (usuarioActivo !== null) {
 
 document.getElementById("go-profile").addEventListener("click", function(e) {
     if (e.target.id === "logout") return
-    window.location.href = "prefil.html"
+    window.location.href = "perfil.html"
 })
 
 //esto cerrara la sesion de la pagina
