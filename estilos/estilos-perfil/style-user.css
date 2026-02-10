@@ -47,7 +47,7 @@ main {
   color: white;
   font-family: var(--text-font);
   text-shadow: 2px 2px black;
-  font-size: 35px;
+  font-size: 30px;
 }
 #user-container .user-card .user-title {
   font-size: 40px;

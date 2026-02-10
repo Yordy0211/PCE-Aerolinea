@@ -20,7 +20,7 @@ if (usuarioActivo !== null) {
     userArea.innerHTML = `
         <img class="img-profile" id="go-profile" src="estilos/img/foto-perfil.jpg" alt="foto-perfil">
 
-        <button class="logout" id="logout">Cerrrar sesión</button>
+        <button class="logout" id="logout">Cerrar sesión</button>
     `
 }
 

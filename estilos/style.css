@@ -293,6 +293,7 @@ footer .footer-container {
 }
 footer .footer-container .redes a {
   text-decoration: none;
+  color: rgb(114, 113, 113);
   margin: 5px;
 }
 footer .footer-container .redes a:hover {

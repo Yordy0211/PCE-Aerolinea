@@ -20,7 +20,7 @@ function mostrarUsuario() {
     <h2 class="userName">Nombre de usuario: ${usuarioActivo.usuario}</h2>
     <h2 class="user-email">Email del usuario: ${usuarioActivo.email}</h2>
     <h2 class="fechaRegistro">Fecha de registro: ${usuarioActivo.fechaRegistro}</h2>
-    <button class="logout" id="logout">Cerrrar sesión</button>
+    <button class="logout" id="logout-profile">Cerrar sesión</button>
 
 
     `
@@ -32,7 +32,10 @@ function mostrarUsuario() {
 
 mostrarUsuario()
 
-
+document.getElementById("logout-profile").addEventListener("click", function(e) {
+    localStorage.removeItem("Usuario Activo")
+    location.reload()
+})
 
 
 
@@ -47,7 +50,7 @@ if (usuarioActivo !== null) {
     userArea.innerHTML = `
         <img class="img-profile" src="estilos/img/foto-perfil.jpg" alt="foto-perfil">
 
-        <button class="logout" id="logout">Cerrrar sesión</button>
+        <button class="logout" id="logout">Cerrar sesión</button>
     `
 }
 
